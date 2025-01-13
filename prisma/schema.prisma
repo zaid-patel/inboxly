@@ -18,3 +18,13 @@ model Post {
 
     @@index([name])
 }
+
+
+model User {
+    id        Int      @id @default(autoincrement())
+    emailAddress String @unique
+    firstName String 
+    lastName String 
+    imageUrl String? 
+    
+}
